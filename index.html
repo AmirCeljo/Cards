@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CardS</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Entry and new game -->
+  <div id="entry"></div>
+
+  <div id="about-game" style="display: none;">
+    <div class="notificationOne">
+      <p class="headerOne">Instructions of game "CardS"<span class="spanOne">X</span></p>
+      <p class="textOne">The game is supposed to be played by two players<br><br>
+        Logic of a game : Each player picks card . The number behind the card is added to his score .
+      If player gets smiley , his score will double and if player gets angry-smiley the player is starting from zero.</p>
+    </div>
+  </div>
+
+  <div id="about-subject" style="display: none;" >
+    <div class="notificationTwo">
+      <p class="headerTwo">About me <span class="spanTwo">X</span></p>
+      <div class="textTwo">
+        <ul class="listItem">
+          <li>You can put any information about yourself here.</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        
+    </div>
+    </div>
+  </div>
+
+  <!-- Main part -->
+  <div id="sector"></div>
+  <div class='final'> </div>
+
+
+  <!--Score and player names -->
+  <div class="score-first">
+
+    <p id="player1" class="checked">Igrac 1</p>
+    <p id="score1">0</p>
+    <p id="smiley-one"></p> 
+
+  </div>
+  <div class="score-second">
+    <p id="player2">Igrac 2</p>
+    <p id="score2">0</p>
+    <p id="smiley-two"></p> 
+  </div>
+
+
+  <!-- popup window that shows score and winner -->
+  <div id="newWinner"></div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
