@@ -163,7 +163,7 @@ function flipcard() {
 
   }
 
-  setTimeout(rotateBack, 1000);
+//   setTimeout(rotateBack, 1000);
  
 
 
