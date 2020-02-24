@@ -418,3 +418,379 @@ body {
   from{opacity: 0;}
   to{opacity: 1;}
 }
+@media(max-width:400px){
+
+  #sector {
+    
+    background-color: rgba(255, 255, 255, 0.527);
+    position: fixed;
+    margin: 25% 0% 0% 8%;
+    width: 75vw;
+    height: 60vh;
+    padding: 5% 0% 0% 5%;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    border-radius:5px;
+  }
+  
+  .final{
+    position:absolute;
+    top:86%;
+    left:8%;
+    width:75vw;
+    height:6vh;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.527);
+    border-radius: 4px;
+    padding:10px;
+    font-size:13px;
+  }
+  
+  .wrapper {
+    width: 35px;
+    height: 35px;
+    
+    background-color: rgb(255, 0, 0);
+    border-radius: 3px;
+    
+  }
+  
+  .wrapper:hover {
+    cursor: pointer;
+  }
+  
+  #cardContent {
+    margin: 10% 10%;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  
+  .score-first {
+    position: absolute;
+    top: 0%;
+    left: 7%;
+    
+  }
+  
+  .score-second {
+    position: absolute;
+    top: 0%;
+    right: 7%;
+  }
+  
+  #entry {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url("pictureintro.png") no-repeat center center/cover;
+    z-index: 1;
+    color:rgba(0, 0, 0, 0.6);
+  
+  }
+  .question {
+    margin-top: 25%;
+    font-size: 17px;
+    line-height: 3rem;
+    text-align: center;
+  
+  }
+  .instructions{
+    width: 100%;
+    height: 15vh; 
+    text-align: center;
+  }
+  .instructions > div{
+    display: flex;
+    margin-left: 10%;
+  }
+  .instructionsOne,
+  .instructionsTwo{
+    border:none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.6);
+    margin-top:12%;
+    margin-left:5%;
+    font-size: 13px;
+  }
+  
+  .btn-yes {
+    border: none;
+    background-color: rgb(6, 128, 22);
+    font-size: 20px;
+    padding: 10px;
+    margin: 7%;
+    width: 90px;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .btn-no {
+    border: none;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    margin: 7%;
+    width: 90px;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  
+  .btn-yes:hover,
+  .btn-no:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  
+  /* About subject and instructions of a game */
+  
+  #about-subject{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height:100%;
+    display: block;
+    position: relative;
+    z-index:10;
+  }
+  #about-game{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height:100%;
+    display: block;
+    position: relative ;
+    z-index:10;
+  }
+  
+  .notificationOne{
+    position: absolute;
+    top:30%;
+    left:9%;
+    width:300px;
+    height:600px;
+    line-height: 4.5vh;
+    animation-name: smoothSlide;
+    animation-duration: 1s ;
+  }
+  .notificationOne .headerOne{
+    height:7%;
+    padding:1%;
+    color:white;
+    font-size:18px;
+    background: rgba(255, 166, 0, 0.87);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .notificationOne .textOne{
+    height:35vh;
+    padding:1%;
+    color:black;
+    font-size:15px;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .notificationTwo{
+    position: absolute;
+    top:20%;
+    left:9%;
+    width:300px;
+    height:600px;
+    animation-name: smoothSlide;
+    animation-duration: 1s ;
+  }
+  .notificationTwo .headerTwo{
+    height:7%;
+    padding:1%;
+    color:white;
+    font-size:25px;
+    background: rgb(0, 132, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .listItem{
+    
+    width:100%;
+    height:100%;
+    list-style:none;
+    
+    line-height: 2rem;
+  }
+  .listItem > li{
+    width:100%;
+    padding:0px;
+    font-size: 23px;
+    margin:2px;
+  }
+  .spanOne,.spanTwo{
+    cursor: pointer;
+    float: right;
+    margin-right:10px;
+    font-size:25px;
+  }
+  .spanOne:hover,.spanTwo:hover{
+    color:black;
+    transition:1s;
+  }
+  
+  .playersName {
+    padding:10px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    font-size: 30px;
+    height: 50vh;
+    line-height: 3rem;
+  /* background-color: rgba(255, 255, 255, 0.432); */
+  }
+  .playersName>div {
+    margin-top: 4%;
+  }
+  
+  /* input fields */
+  #player-one,
+  #player-two {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width: 250px;
+    padding: 9px;
+    box-shadow:2px 2px 2px 0px rgba(85, 85, 85, 0.6);
+  }
+  
+  
+  #score1,
+  #score2 {
+    /* font-family: 'Press Start 2P'; */
+    font-size: 20px;
+    
+    
+  }
+  
+  .btn-submit {
+    border: none;
+    background-color: rgb(43, 108, 138);
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 12%;
+    margin-left: 30%;
+    width: 90px;
+   
+    border-radius: 3px;
+    color: white;
+    
+  }
+  
+  .btn-submit:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    
+  }
+  
+  #newWinner {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(40, 40, 46, 0.863);
+    font-size: 30px;
+    text-align: center;
+    visibility: hidden;
+    z-index: 2;
+  }
+  
+  #player1,
+  #player2 {
+    
+    padding: 0px;
+    font-size:20px;
+    
+  }
+  #smiley-one,
+  #smiley-two{
+    margin-top:10px;
+    width:120px;
+    border-top:1px solid rgb(255, 255, 255);
+    padding-top:0px;
+    font-size:15px;
+    display: flex;
+    
+  }
+  .winReport {
+   
+    margin-top: 15%;
+
+    width: 100%;
+    height: 100%;
+    line-height: 3rem;
+    font-size:20px;
+  }
+  
+  .btn-continue {
+   
+    font-size: 15px;
+    padding: 10px;
+    margin: 5%;
+    width: 130px;
+    margin-top:20%;
+  }
+  .btn-continue:hover{
+    transition: 1s;
+    background-color: orange;
+    border-radius: 0px;
+  }
+  
+  .btn-startover {
+ 
+    font-size: 15px;
+    padding: 10px;
+    margin: 0%;
+    width: 130px;
+  
+  }
+  .btn-startover:hover{
+    transition: 1s;
+    background-color: rosybrown;
+    border-radius: 0px;
+  }
+  
+  .btn-continue:hover,
+  .btn-startover:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: rgb(60, 255, 0);
+  }
+  
+  .checked {
+    /* background-color: rgba(138, 138, 138, 0.8); */
+    /* border-top:2px solid rgb(255, 0, 0); */
+    /* border-bottom:2px solid red; */
+    color: rgb(243, 0, 0);
+  
+  }
+  .fas{
+    margin-left:38%;
+    font-size:65px;
+    color:white;
+  }
+  .igr{
+    width:100%;
+    text-align:center;
+    display: flex;
+  }
+  
+}
