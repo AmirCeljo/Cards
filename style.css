@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  /* color:rgb(156, 156, 156); */
+}
+
+
+
+/* */
+body {
+  height: 100vh;
+  background: url("picuresector.png")no-repeat center center/cover;
+
+  overflow: hidden;
+  color:white;
+ 
+}
+
+
+#sector {
+  
+  background-color: rgba(255, 255, 255, 0.527);
+  position: fixed;
+  margin: 2% 0% 0% 25%;
+  width: 50vw;
+  height: 69vh;
+  padding: 2% 0% 2% 3%;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+  border-radius:5px;
+}
+
+.final{
+  position:absolute;
+  top:85%;
+  left:25%;
+  width:51.6vw;
+  height:7vh;
+  color: black;
+  background-color:rgba(255, 255, 255, 0.527);
+  border-radius: 4px;
+  padding:10px;
+  font-size:20px;
+}
+
+.wrapper {
+  width: 80px;
+  height: 80px;
+  
+  background-color: rgb(255, 0, 0);
+  border-radius: 3px;
+  
+}
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
+#cardContent {
+  margin: 10% 10%;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 45px;
+}
+
+
+
+.score-first {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  font-size: 35px;
+  text-align: center;
+}
+
+.score-second {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+  font-size: 35px;
+  text-align: center;
+}
+
+#entry {
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("pictureintro.png") no-repeat center center/cover;
+  z-index: 1;
+  color:rgba(0, 0, 0, 0.6);
+
+}
+.question {
+  margin-top: 15%;
+  font-size: 25px;
+  line-height: 5rem;
+  text-align: center;
+
+}
+.instructions{
+  width: 100%;
+  height: 15vh; 
+  text-align: center;
+}
+.instructions > div{
+  display: flex;
+  margin-left:31.5%;
+}
+.instructionsOne,
+.instructionsTwo{
+  border:none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color:rgba(0, 0, 0, 0.6);
+  margin-top:2%;
+  margin-left:5%;
+  font-size: 20px;
+}
+
+.btn-yes {
+  border: none;
+  background-color: rgb(6, 128, 22);
+  font-size: 30px;
+  padding: 15px;
+  margin: 2%;
+  width: 110px;
+  border-radius: 2px;
+  color: white;
+}
+
+.btn-no {
+  border: none;
+  background-color: rgb(255, 0, 0);
+  font-size: 30px;
+  padding: 15px;
+  margin: 2%;
+  width: 110px;
+  border-radius: 2px;
+  color: white;
+}
+
+
+.btn-yes:hover,
+.btn-no:hover {
+  transition: 0.5s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+/* About subject and instructions of a game */
+
+#about-subject{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height:100%;
+  display: block;
+  position: relative;
+  z-index:10;
+}
+#about-game{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height:100%;
+  display: block;
+  position: relative ;
+  z-index:10;
+}
+
+.notificationOne{
+  position: absolute;
+  top:30%;
+  left:25%;
+  width:800px;
+  height:600px;
+  line-height: 4.5vh;
+  animation-name: smoothSlide;
+  animation-duration: 1s ;
+}
+.notificationOne .headerOne{
+  height:7%;
+  padding:1%;
+  color:white;
+  font-size:20px;
+  background: rgba(255, 166, 0, 0.87);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.notificationOne .textOne{
+  height:35vh;
+  padding:1%;
+  color:black;
+  font-size:25px;
+  background: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.notificationTwo{
+  position: absolute;
+  top:20%;
+  left:25%;
+  width:800px;
+  height:600px;
+  animation-name: smoothSlide;
+  animation-duration: 1s ;
+}
+.notificationTwo .headerTwo{
+  height:7%;
+  padding:1%;
+  color:white;
+  font-size:25px;
+  background: rgb(0, 132, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.notificationTwo .textTwo{
+  
+  height:53vh;
+  padding:1%;
+  color:black;
+  font-size:20px;
+  background: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.listItem{
+  
+  width:100%;
+  height:100%;
+  list-style:none;
+  
+  line-height: 3rem;
+}
+.listItem > li{
+  width:100%;
+  padding:0px;
+  font-size: 30px;
+  margin:2px;
+}
+.spanOne,.spanTwo{
+  cursor: pointer;
+  float: right;
+  margin-right:10px;
+  font-size:25px;
+}
+.spanOne:hover,.spanTwo:hover{
+  color:black;
+  transition:1s;
+}
+
+.playersName {
+  padding:20px;
+  position: absolute;
+  top: 10%;
+  left: 36%;
+  font-size: 50px;
+  height: 70vh;
+  line-height: 4rem;
+/* background-color: rgba(255, 255, 255, 0.432); */
+}
+.playersName>div {
+  margin-top: 3%;
+}
+
+/* input fields */
+#player-one,
+#player-two {
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  width: 400px;
+  padding: 12px;
+  box-shadow:2px 2px 2px 0px rgba(85, 85, 85, 0.6);
+}
+
+
+#score1,
+#score2 {
+  /* font-family: 'Press Start 2P'; */
+  font-size: 40px;
+  
+  
+}
+
+.btn-submit {
+  border: none;
+  background-color: rgb(43, 108, 138);
+  font-size: 25px;
+  padding: 15px;
+  margin-top: 12%;
+  margin-left: 35%;
+  width: 110px;
+ 
+  border-radius: 3px;
+  color: white;
+  
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  
+}
+
+#newWinner {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(40, 40, 46, 0.863);
+  font-size: 30px;
+  text-align: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+#player1,
+#player2 {
+  
+  padding: 10px;
+  font-size:40px;
+  
+}
+#smiley-one,
+#smiley-two{
+  margin-top:10px;
+  width:200px;
+  border-top:2px solid rgb(255, 255, 255);
+  padding-top:30px;
+}
+.winReport {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.712) !important;
+  margin-top: 12%;
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+}
+
+.btn-continue {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  padding: 15px;
+  margin: 5%;
+  width: 250px;
+  border:1.5px solid orange;
+  border-radius: 2px;
+  color: white;
+  opacity: 0.9;
+  transition: 1s;
+}
+.btn-continue:hover{
+  transition: 1s;
+  background-color: orange;
+  border-radius: 0px;
+}
+
+.btn-startover {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  padding: 15px;
+  margin: 0%;
+  width: 320px;
+  border:1.5px solid rosybrown;
+  border-radius: 2px;
+  color: white;
+  opacity: 0.9;
+}
+.btn-startover:hover{
+  transition: 1s;
+  background-color: rosybrown;
+  border-radius: 0px;
+}
+
+.btn-continue:hover,
+.btn-startover:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(60, 255, 0);
+}
+
+.checked {
+  /* background-color: rgba(138, 138, 138, 0.8); */
+  /* border-top:2px solid rgb(255, 0, 0); */
+  /* border-bottom:2px solid red; */
+  color: rgb(243, 0, 0);
+
+}
+.fas{
+  margin-left:36%;
+  font-size:100px;
+  color:white;
+}
+.igr{
+  width:100%;
+  text-align:center;
+  display: flex;
+}
+
+
+@keyframes smoothSlide{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
